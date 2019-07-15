@@ -11,42 +11,59 @@
 
 <body>
 <div id="mainwrapper">
-  <header> 
+  <header>
     <!--**************************************************************************
-    Header starts here. It contains Logo and 3 navigation links. 
+    Header starts here. It contains Logo and 3 navigation links.
     ****************************************************************************-->
     <div id="logo"><!-- <img src="logoImage.png" alt="sample logo"> --><!-- Company Logo text --><img src="IMG_0098.jpg" width="30" height="30" alt=""/></div>
     <nav> <a href="#" title="Link">Nav1</a> <a href="#" title="Link">Nav2</a><a href="#" title="Link">Nav3</a> </nav>
   </header>
   <div id="content">
-    <div class="notOnDesktop"> 
+    <div class="notOnDesktop">
       <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
       <input type="text" placeholder="Search">
+
     </div>
-    <section id="mainContent"> 
+    <div class="jumbotron">
+   <h1 class="display-3">Hello, world!</h1>
+   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+   <hr class="my-4">
+   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+   <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+   </p>
+</div>
+    <section id="mainContent">
       <!--************************************************************************
     Main Blog content starts here
     ****************************************************************************-->
       <h1><!-- Blog title -->iframe要素（Youtubeなどの動画）のレスポンシブ対応</h1>
-      
+
       <p>失礼します、MOMOTHEMODのMOMOZYです。</p>
-      
-      <p>レスポンシブwebデザインのサイトにYoutubeの動画を埋めこんだものの、パソコンではGood Jobなのにスマホで観ると画面のサイズが変！<br>てな時にはiframe要素をレスポンシブ対応にしましょう。</p>
+
+      <p>レスポンシブwebデザインのサイトにYoutubeの動画を埋めこんだものの、<br>パソコンではGood Jobなのにスマホで観ると画面のサイズが変！<br>てな時にはiframe要素をレスポンシブ対応にしましょう。</p>
+      <p>まずはHTML。iframe要素をdivで囲みましょう。</p>
+      <div><p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="momothemod" data-slug-hash="KLOEWJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="KLOEWJ">
+  <span>See the Pen <a href="https://codepen.io/momothemod/pen/KLOEWJ/">
+  KLOEWJ</a> by momozy (<a href="https://codepen.io/momothemod">@momothemod</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script></div>
       <h3><!-- Tagline -->親（div）要素にpaddingを設定</h3>
-      
+
       <p>iframe要素のオリジナルサイズ（横幅&高さ）からアスペクト比を算出してpadding設定します。<br>
 padding-topでもpadding-bottomでもどちらでもOKです。<br>
 HD動画（16:9）の場合は、100 / 16 * 9 = 56.25% となります。</p>
       <div id="bannerImage"><img src="BlogPostAssets/images/SliderLayerImage.png" alt=""/></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-      <aside id="authorInfo"> 
+      <aside id="authorInfo">
         <!-- The author information is contained here -->
-        <h2>Author Name</h2>
+        <h2>momothemod</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </aside>
     </section>
-    <section id="sidebar"> 
+    <section id="sidebar">
       <!--************************************************************************
     Sidebar starts here. It contains a searchbox, sample ad image and 6 links
     ****************************************************************************-->
@@ -63,7 +80,7 @@ HD動画（16:9）の場合は、100 / 16 * 9 = 56.25% となります。</p>
         </ul>
       </nav>
     </section>
-    <footer> 
+    <footer>
       <!--************************************************************************
     Footer starts here
     ****************************************************************************-->
